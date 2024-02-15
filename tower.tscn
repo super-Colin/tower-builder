@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://gaa5fvj2mgok"]
+
+[ext_resource type="Script" path="res://Tower.gd" id="1_to0iu"]
+[ext_resource type="Texture2D" uid="uid://gx7l2yeq1lft" path="res://stoneBrick.png" id="2_86j25"]
+
+[node name="Tower" type="Node2D"]
+script = ExtResource("1_to0iu")
+
+[node name="StoneBrick" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("2_86j25")

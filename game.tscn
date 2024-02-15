@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://20fbt6w76obb"]
+
+[ext_resource type="Script" path="res://game.gd" id="1_7q1og"]
+[ext_resource type="PackedScene" uid="uid://bhonn8guq5ccv" path="res://ui.tscn" id="1_ox67m"]
+[ext_resource type="PackedScene" uid="uid://83mj3x6kuvst" path="res://background.tscn" id="3_spluf"]
+[ext_resource type="PackedScene" uid="uid://gaa5fvj2mgok" path="res://tower.tscn" id="4_pryjq"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_7q1og")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(574, 326)
+
+[node name="Background" parent="." instance=ExtResource("3_spluf")]
+
+[node name="Tower" parent="." instance=ExtResource("4_pryjq")]
+position = Vector2(562, 524)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI" parent="CanvasLayer" instance=ExtResource("1_ox67m")]
+top_level = true
+custom_minimum_size = Vector2(100, 100)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 1

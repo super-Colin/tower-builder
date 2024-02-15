@@ -1,0 +1,108 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhonn8guq5ccv"]
+
+[ext_resource type="Script" path="res://ui.gd" id="1_g601v"]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g601v")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -97.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="HFlowContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Money" type="Label" parent="MarginContainer/HFlowContainer"]
+layout_mode = 2
+text = "Starting text"
+
+[node name="AddBrick" type="Button" parent="MarginContainer/HFlowContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8, 0.372549, 0.0627451, 1)
+theme_override_colors/font_pressed_color = Color(0.8, 0.372549, 0.0627451, 1)
+theme_override_colors/font_hover_color = Color(0.8, 0.372549, 0.0627451, 1)
+theme_override_colors/font_focus_color = Color(0.8, 0.372549, 0.0627451, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.8, 0.372549, 0.0627451, 1)
+text = "Lay Brick"
+
+[node name="Label" type="Label" parent="MarginContainer"]
+layout_mode = 2
+text = "bjrkedfgbjkdnfkgns
+"
+
+[node name="VFlowContainer" type="VFlowContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="VFlowContainer"]
+layout_mode = 2
+text = "Label 1"
+
+[node name="Label2" type="Label" parent="VFlowContainer"]
+layout_mode = 2
+text = "Label 1"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+text = "Label 1"
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Label 1"
+
+[node name="Label3" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Long Label 3"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_right = 40.0
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "Label 1"
+
+[node name="Label2" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "Label 1"
+
+[node name="Label3" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "Long Label 3"
