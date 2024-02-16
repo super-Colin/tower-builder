@@ -1,23 +1,26 @@
-[gd_scene load_steps=3 format=3 uid="uid://db3ble3gdetj5"]
+[gd_scene load_steps=4 format=3 uid="uid://db3ble3gdetj5"]
 
+[ext_resource type="Script" path="res://mine.gd" id="1_85pom"]
 [ext_resource type="Texture2D" uid="uid://cjmik7yyy2244" path="res://4.png" id="1_s3ohl"]
 [ext_resource type="Texture2D" uid="uid://xv12l64k0540" path="res://5.png" id="2_uwm80"]
 
 [node name="Mine" type="Area2D"]
+script = ExtResource("1_85pom")
 
-[node name="4" type="Sprite2D" parent="."]
+[node name="Mountain1Collision" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(596, 204, 1195, 644, -21, 643)
+
+[node name="Mountain2Collision" type="CollisionPolygon2D" parent="."]
+visible = false
+polygon = PackedVector2Array(540, 359, 894, 639, 93, 649)
+
+[node name="Mountain1Sprite" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)
 texture = ExtResource("1_s3ohl")
 centered = false
 
-[node name="5" type="Sprite2D" parent="."]
+[node name="Mountain2Sprite" type="Sprite2D" parent="."]
+visible = false
 scale = Vector2(2, 2)
 texture = ExtResource("2_uwm80")
 centered = false
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-visible = false
-polygon = PackedVector2Array(596, 204, 1195, 644, -21, 643)
-
-[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="."]
-polygon = PackedVector2Array(540, 359, 894, 639, 93, 649)

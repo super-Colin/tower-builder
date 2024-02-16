@@ -32,6 +32,10 @@ layout_mode = 2
 layout_mode = 2
 text = "Starting text"
 
+[node name="Stone" type="Label" parent="MarginContainer/HFlowContainer"]
+layout_mode = 2
+text = "Starting text"
+
 [node name="AddBrick" type="Button" parent="MarginContainer/HFlowContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.8, 0.372549, 0.0627451, 1)

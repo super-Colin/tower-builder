@@ -1,6 +1,7 @@
 extends Node2D
 
-var brickCost = Configs.brickCost
+var brickCost_money = Configs.brickCost_money
+var brickCost_stone = Configs.brickCost_stone
 var moneyGenerationTime = Configs.moneyGenerationTime
 var moneyGenerationTimer = moneyGenerationTime
 var moneyGenerationAmount = Configs.moneyGenerationAmount
@@ -12,6 +13,7 @@ func _ready():
 
 
 func _process(delta):
+	generateMoney(delta)
 	# camera
 	var direction = Input.get_axis("ui_left", "ui_right")
 	if direction:
@@ -23,20 +25,22 @@ func _process(delta):
 		$Camera2D.position.y += direction * 10
 	else:
 		$Camera2D.position.y += direction * -10
+
+
+
+
+
+func generateMoney(delta):
 	moneyGenerationTimer -= delta
-	if moneyGenerationTimer < 0:
-		generateMoney()
+	if moneyGenerationTimer <= 0:
 		moneyGenerationTimer = moneyGenerationTime
-
-
-
-func generateMoney():
-	Events.addMoney.emit(moneyGenerationAmount)
+		Events.addMoney.emit(moneyGenerationAmount)
 
 
 func _askToAddBrick():
-	if not Globals.money >= brickCost:
-		return
-	else :
-		Events.removeMoney.emit(brickCost)
+	if Globals.money >= brickCost_money and Globals.stone >= brickCost_stone:
+		Events.removeMoney.emit(brickCost_money)
+		Events.removeStone.emit(brickCost_stone)
 		Events.addBrick.emit()
+	else :
+		return

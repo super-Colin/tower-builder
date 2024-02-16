@@ -1,13 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://83mj3x6kuvst"]
+[gd_scene load_steps=2 format=3 uid="uid://83mj3x6kuvst"]
 
 [ext_resource type="Texture2D" uid="uid://4vysampitn2u" path="res://craiyon_200115_An_autumnal_magical_enchanted_forest__pixel_art__512_bits.png" id="1_sru5l"]
-[ext_resource type="Texture2D" uid="uid://bmf3vie1m2du0" path="res://city 2/2.png" id="2_q1bxy"]
-[ext_resource type="Texture2D" uid="uid://pmg3p4p7ht34" path="res://city 2/3.png" id="3_jrdcr"]
-[ext_resource type="Texture2D" uid="uid://c5jnple1n3rbt" path="res://city 2/4.png" id="4_bomxs"]
-[ext_resource type="Texture2D" uid="uid://80pxljuhevdp" path="res://city 2/5.png" id="5_yq1wy"]
-[ext_resource type="Texture2D" uid="uid://bxgry1hr8a7qe" path="res://city 2/6.png" id="6_ou0ob"]
-[ext_resource type="Texture2D" uid="uid://cjmik7yyy2244" path="res://4.png" id="7_qgdnh"]
-[ext_resource type="Texture2D" uid="uid://xv12l64k0540" path="res://5.png" id="8_eg262"]
 
 [node name="Background" type="Node2D"]
 position = Vector2(0, -494)
@@ -17,64 +10,3 @@ position = Vector2(-14, 195)
 scale = Vector2(1.14844, 1)
 texture = ExtResource("1_sru5l")
 centered = false
-
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(-9, -261)
-motion_scale = Vector2(0.7, 0.7)
-
-[node name="2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(-2, -509)
-scale = Vector2(1.99691, 1.99691)
-texture = ExtResource("2_q1bxy")
-centered = false
-
-[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(-9, -261)
-motion_scale = Vector2(1.5, 1.5)
-
-[node name="3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
-position = Vector2(-10, -735)
-scale = Vector2(2.02623, 2.02623)
-texture = ExtResource("3_jrdcr")
-centered = false
-
-[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(-9, -261)
-motion_scale = Vector2(0.9, 0.9)
-
-[node name="4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
-position = Vector2(-14, -704)
-scale = Vector2(2.07407, 2.07407)
-texture = ExtResource("4_bomxs")
-centered = false
-
-[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(-9, -261)
-
-[node name="5" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
-position = Vector2(-3, -688)
-scale = Vector2(2.07407, 2.07407)
-texture = ExtResource("5_yq1wy")
-centered = false
-
-[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(-9, -261)
-motion_scale = Vector2(0.8, 0.8)
-
-[node name="6" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer5"]
-position = Vector2(-1, -658)
-scale = Vector2(2.03395, 2.03395)
-texture = ExtResource("6_ou0ob")
-centered = false
-
-[node name="4" type="Sprite2D" parent="."]
-position = Vector2(-309, 492)
-scale = Vector2(2.24074, 2.24074)
-texture = ExtResource("7_qgdnh")
-
-[node name="5" type="Sprite2D" parent="."]
-position = Vector2(-309, 492)
-scale = Vector2(2.241, 2.241)
-texture = ExtResource("8_eg262")
