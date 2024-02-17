@@ -5,6 +5,7 @@ extends Control
 func _ready():
 	Events.moneyUpdated.connect(_updateMoneyDisplay)
 	Events.stoneUpdated.connect(_updateStoneDisplay)
+	Events.towerHeightUpdated.connect(_updateHeightDisplay)
 	$MarginContainer/HFlowContainer/AddBrick.button_up.connect(askToAddBrick)
 	#print("ui ready")
 
@@ -26,6 +27,11 @@ func _updateMoneyDisplay():
 func _updateStoneDisplay():
 	#print("updating money from ui")
 	$MarginContainer/HFlowContainer/Stone.text = "Stone: %d" % Globals.stone
+
+
+func _updateHeightDisplay():
+	#print("updating money from ui")
+	$MarginContainer/HFlowContainer/Height.text = "Height: %d" % Globals.totalHeight
 
 
 

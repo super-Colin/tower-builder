@@ -14,17 +14,7 @@ func _ready():
 
 func _process(delta):
 	generateMoney(delta)
-	# camera
-	var direction = Input.get_axis("ui_left", "ui_right")
-	if direction:
-		$Camera2D.position.x += direction * 10
-	else:
-		$Camera2D.position.x += direction * -10
-	direction = Input.get_axis("ui_up", "ui_down")
-	if direction:
-		$Camera2D.position.y += direction * 10
-	else:
-		$Camera2D.position.y += direction * -10
+
 
 
 
@@ -35,6 +25,7 @@ func generateMoney(delta):
 	if moneyGenerationTimer <= 0:
 		moneyGenerationTimer = moneyGenerationTime
 		Events.addMoney.emit(moneyGenerationAmount)
+		Events.addBrick.emit()
 
 
 func _askToAddBrick():

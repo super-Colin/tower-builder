@@ -50,9 +50,11 @@ func addBrick():
 		nextBrickOffset = "low"
 	$'.'.add_child(newBrick)
 	widthInBricks +=1
+	# if the layer is finished
 	if widthInBricks == widthInBricksPerLayer:
 		widthInBricks = 0
 		totalHeight += 1
+		Events.addTowerHeight.emit(1)
 		nextBrickOffset = rowStartingOffset
 
 

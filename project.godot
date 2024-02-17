@@ -24,7 +24,6 @@ Configs="*res://Configs.gd"
 [display]
 
 window/stretch/mode="viewport"
-window/stretch/scale_mode="integer"
 
 [gui]
 
