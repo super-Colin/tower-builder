@@ -25,9 +25,22 @@ func _process(delta):
 
 
 func centerOnTower():
+	centerOnTowerHorizontal()
+	centerOnTowerVertical()
+
+
+func centerOnTowerVertical():
 	if followTower:
 		$'.'.position.y = $"../Tower".brickHeight * (Globals.totalHeight - 5) * -1
-	pass
+
+
+func centerOnTowerHorizontal():
+	if followTower:
+		$'.'.position.x = $"../Tower".position.x
+
+
+
+
 
 func _toggleFollowTower():
 	print("toggle follow tower")
