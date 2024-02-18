@@ -1,9 +1,11 @@
 extends Camera2D
 
+var followTower = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	Events.towerHeightUpdated.connect(centerOnTower)
+	Events.toggleCameraFollowTower.connect(_toggleFollowTower)
 	pass # Replace with function body.
 
 
@@ -23,8 +25,13 @@ func _process(delta):
 
 
 func centerOnTower():
-	$'.'.position.y = $"../Tower".brickHeight * (Globals.totalHeight - 5) * -1
+	if followTower:
+		$'.'.position.y = $"../Tower".brickHeight * (Globals.totalHeight - 5) * -1
+	pass
 
+func _toggleFollowTower():
+	print("toggle follow tower")
+	followTower = not followTower
 
 
 

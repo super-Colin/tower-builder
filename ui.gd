@@ -8,6 +8,7 @@ func _ready():
 	Events.towerHeightUpdated.connect(_updateHeightDisplay)
 	$MarginContainer/HFlowContainer/AddBrick.button_up.connect(askToAddBrick)
 	#print("ui ready")
+	$MarginContainer/HFlowContainer/CheckBox.toggled.connect(_toggleFollowTower)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -33,6 +34,8 @@ func _updateHeightDisplay():
 	#print("updating money from ui")
 	$MarginContainer/HFlowContainer/Height.text = "Height: %d" % Globals.totalHeight
 
+func _toggleFollowTower(toggled):
+	Events.toggleCameraFollowTower.emit()
 
 
 

@@ -1,64 +1,120 @@
-[gd_scene load_steps=7 format=3 uid="uid://83mj3x6kuvst"]
+[gd_scene load_steps=11 format=3 uid="uid://83mj3x6kuvst"]
 
+[ext_resource type="Texture2D" uid="uid://e50xijmgmejr" path="res://skyBg.png" id="1_ci263"]
 [ext_resource type="Texture2D" uid="uid://om3w8d0dhl6b" path="res://An_autumnal_magical_enchanted_forest_clear.png" id="1_tqemc"]
+[ext_resource type="Texture2D" uid="uid://cvfm7uvn80vny" path="res://clouds.png" id="2_laok5"]
 [ext_resource type="Texture2D" uid="uid://bmf3vie1m2du0" path="res://city 2/2.png" id="2_q1bxy"]
 [ext_resource type="Texture2D" uid="uid://pmg3p4p7ht34" path="res://city 2/3.png" id="3_jrdcr"]
 [ext_resource type="Texture2D" uid="uid://c5jnple1n3rbt" path="res://city 2/4.png" id="4_bomxs"]
 [ext_resource type="Texture2D" uid="uid://80pxljuhevdp" path="res://city 2/5.png" id="5_yq1wy"]
 [ext_resource type="Texture2D" uid="uid://bxgry1hr8a7qe" path="res://city 2/6.png" id="6_ou0ob"]
+[ext_resource type="Texture2D" uid="uid://iwt0lo8brwfv" path="res://Grass.png" id="7_fojuc"]
+[ext_resource type="Texture2D" uid="uid://dsi670i2jb0k5" path="res://Grass2.png" id="8_ekrwc"]
 
 [node name="Background" type="Node2D"]
-position = Vector2(0, -494)
+position = Vector2(0, -851)
 metadata/_edit_horizontal_guides_ = [-336.0]
 
-[node name="Craiyon200115AnAutumnalMagicalEnchantedForestPixelArt512Bits" type="Sprite2D" parent="."]
-position = Vector2(-14, 195)
-scale = Vector2(1.14844, 1)
-texture = ExtResource("1_tqemc")
-centered = false
-
 [node name="CityParallaxBackground" type="ParallaxBackground" parent="."]
+offset = Vector2(0, 100)
+transform = Transform2D(1, 0, 0, 1, 0, 100)
+
+[node name="ParallaxLayer6" type="ParallaxLayer" parent="CityParallaxBackground"]
+motion_scale = Vector2(0.3, 0.3)
+
+[node name="SkyBg" type="Sprite2D" parent="CityParallaxBackground/ParallaxLayer6"]
+z_index = -1000
+z_as_relative = false
+position = Vector2(616, -567)
+scale = Vector2(1.444, 1.444)
+texture = ExtResource("1_ci263")
+
+[node name="ParallaxLayer7" type="ParallaxLayer" parent="CityParallaxBackground"]
+motion_scale = Vector2(0.7, 0.7)
+
+[node name="Clouds" type="Sprite2D" parent="CityParallaxBackground/ParallaxLayer7"]
+position = Vector2(674, -1266.25)
+scale = Vector2(1.686, 2.6315)
+texture = ExtResource("2_laok5")
+
+[node name="Clouds2" type="Sprite2D" parent="CityParallaxBackground/ParallaxLayer7"]
+position = Vector2(1100, -3646)
+scale = Vector2(3.19, 2.6315)
+texture = ExtResource("2_laok5")
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="CityParallaxBackground"]
-motion_scale = Vector2(0.5, 0.5)
+motion_scale = Vector2(0.2, 0.2)
 
 [node name="2" type="Sprite2D" parent="CityParallaxBackground/ParallaxLayer"]
-position = Vector2(0, -200)
+position = Vector2(0, -442.435)
 scale = Vector2(2, 2)
 texture = ExtResource("2_q1bxy")
 centered = false
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="CityParallaxBackground"]
-motion_scale = Vector2(0.6, 0.6)
+motion_scale = Vector2(0.25, 0.25)
 
 [node name="3" type="Sprite2D" parent="CityParallaxBackground/ParallaxLayer2"]
-position = Vector2(0, -150)
+position = Vector2(0, -479)
 scale = Vector2(2, 2)
 texture = ExtResource("3_jrdcr")
 centered = false
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="CityParallaxBackground"]
-motion_scale = Vector2(0.7, 0.7)
+motion_scale = Vector2(0.35, 0.35)
 
 [node name="4" type="Sprite2D" parent="CityParallaxBackground/ParallaxLayer3"]
-position = Vector2(0, -100)
+position = Vector2(0, -560)
 scale = Vector2(2, 2)
 texture = ExtResource("4_bomxs")
 centered = false
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="CityParallaxBackground"]
-motion_scale = Vector2(0.8, 0.8)
+motion_scale = Vector2(0.5, 0.5)
 
 [node name="5" type="Sprite2D" parent="CityParallaxBackground/ParallaxLayer4"]
-position = Vector2(0, -50)
+position = Vector2(0, -666)
 scale = Vector2(2, 2)
 texture = ExtResource("5_yq1wy")
 centered = false
 
 [node name="ParallaxLayer5" type="ParallaxLayer" parent="CityParallaxBackground"]
-motion_scale = Vector2(0.9, 0.9)
+motion_scale = Vector2(0.6, 0.6)
 
 [node name="6" type="Sprite2D" parent="CityParallaxBackground/ParallaxLayer5"]
+position = Vector2(0, -775)
 scale = Vector2(2, 2)
 texture = ExtResource("6_ou0ob")
 centered = false
+
+[node name="ForestParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ForestParallaxBackground"]
+motion_scale = Vector2(0.7, 0.7)
+
+[node name="Craiyon200115AnAutumnalMagicalEnchantedForestPixelArt512Bits" type="Sprite2D" parent="ForestParallaxBackground/ParallaxLayer3"]
+position = Vector2(0, -432)
+scale = Vector2(1.14844, 1)
+texture = ExtResource("1_tqemc")
+centered = false
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ForestParallaxBackground"]
+motion_scale = Vector2(0.8, 0.8)
+
+[node name="Grass1-1" type="Sprite2D" parent="ForestParallaxBackground/ParallaxLayer"]
+position = Vector2(297, 277)
+scale = Vector2(2.29688, 2.29688)
+texture = ExtResource("7_fojuc")
+
+[node name="Grass1-2" type="Sprite2D" parent="ForestParallaxBackground/ParallaxLayer"]
+position = Vector2(881, 277)
+scale = Vector2(2.29688, 2.29688)
+texture = ExtResource("7_fojuc")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ForestParallaxBackground"]
+motion_scale = Vector2(0.9, 0.9)
+
+[node name="Grass2" type="Sprite2D" parent="ForestParallaxBackground/ParallaxLayer2"]
+position = Vector2(586, 355)
+scale = Vector2(1.14844, 0.484375)
+texture = ExtResource("8_ekrwc")

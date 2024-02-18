@@ -28,7 +28,7 @@ mouse_filter = 1
 layer = -128
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2(0.2, 0.2)
+motion_scale = Vector2(0.15, 0.15)
 
 [node name="Mine" parent="ParallaxBackground/ParallaxLayer" instance=ExtResource("5_umo26")]
 position = Vector2(-1040, -663)

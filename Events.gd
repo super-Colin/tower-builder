@@ -15,6 +15,8 @@ signal towerHeightUpdated
 signal addTowerHeight(amount: int)
 signal removeTowerHeight(amount: int)
 
+signal toggleCameraFollowTower
+
 
 
 
