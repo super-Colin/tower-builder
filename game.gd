@@ -26,6 +26,7 @@ func generateMoney(delta):
 		moneyGenerationTimer = moneyGenerationTime
 		Events.addMoney.emit(moneyGenerationAmount)
 		Events.addBrick.emit()
+		Events.addEarthEaten.emit(0.01)
 
 
 func _askToAddBrick():
@@ -35,3 +36,27 @@ func _askToAddBrick():
 		Events.addBrick.emit()
 	else :
 		return
+
+
+
+
+
+
+#
+#
+#
+#func _unhandled_input(event):
+	#if event.is_action_pressed("scroll_up"):
+		#print("zooming in")
+		##_set_zoom_level(_zoom_level - zoom_factor)
+	#if event.is_action_pressed("scroll_down"):
+		#print("zooming out")
+		##_set_zoom_level(_zoom_level + zoom_factor)
+	##tween.tween_property($'.', "position", Vector2(0, 0), 1)
+#
+
+
+
+
+
+

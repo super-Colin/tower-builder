@@ -23,11 +23,10 @@ func _process(delta):
 
 func _input_event(viewport, event, intt):
 	if event is InputEventMouseButton and event.pressed:
-		#InputEventMouseButton
 		if mouseUp:
 			Events.addStone.emit(7)
 		mouseUp = !mouseUp
-		print("button pressed ", event)
+		#print("button pressed ", event)
 
 
 

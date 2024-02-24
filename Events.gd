@@ -18,6 +18,8 @@ signal removeTowerHeight(amount: int)
 signal toggleCameraFollowTower
 
 
+signal earthEatenUpdated
+signal addEarthEaten(amount: float)
 
 
 func _ready():
@@ -27,7 +29,7 @@ func _ready():
 	addStone.connect(_addStone)
 	removeStone.connect(_removeStone)
 	addTowerHeight.connect(_addTowerHeight)
-	removeTowerHeight.connect(_removeTowerHeight)
+	addEarthEaten.connect(_addEarthEaten)
 
 func _addMoney(amount):
 	Globals.money = Globals.money + amount
@@ -55,3 +57,16 @@ func _addTowerHeight(amount):
 func _removeTowerHeight(amount):
 	Globals.totalHeight = Globals.totalHeight - amount
 	towerHeightUpdated.emit()
+
+
+
+func _addEarthEaten(amount):
+	if Globals.earthEaten > -1:
+		Globals.earthEaten = Globals.earthEaten - amount
+	#print("earth eaten")
+	#print( Globals.earthEaten )
+	earthEatenUpdated.emit()
+
+
+
+
