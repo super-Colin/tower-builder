@@ -4,9 +4,9 @@ var followTower = true
 
 
 # Lower cap for the `_zoom_level`.
-var min_zoom := 0.3
+var min_zoom := 0.1
 # Upper cap for the `_zoom_level`.
-var max_zoom := 3.0
+var max_zoom := 5.0
 # Controls how much we increase or decrease the `_zoom_level` on every turn of the scroll wheel.
 var zoom_factor := 0.1
 # Duration of the zoom's tween animation.
@@ -43,8 +43,9 @@ func _process(delta):
 
 
 func centerOnTower():
-	centerOnTowerHorizontal()
-	centerOnTowerVertical()
+	pass
+	#centerOnTowerHorizontal()
+	#centerOnTowerVertical()
 
 
 func centerOnTowerVertical():

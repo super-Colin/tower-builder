@@ -33,6 +33,7 @@ func _askToAddBrick():
 	if Globals.money >= brickCost_money and Globals.stone >= brickCost_stone:
 		Events.removeMoney.emit(brickCost_money)
 		Events.removeStone.emit(brickCost_stone)
+		#print("emiting addBrick")
 		Events.addBrick.emit()
 	else :
 		return
