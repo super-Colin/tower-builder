@@ -62,7 +62,7 @@ func centerOnTowerHorizontal():
 
 
 func _toggleFollowTower():
-	print("toggle follow tower")
+	#print("toggle follow tower")
 	followTower = not followTower
 
 
@@ -71,7 +71,7 @@ func _toggleFollowTower():
 func _set_zoom_level(value: float):
 	# We limit the value between `min_zoom` and `max_zoom`
 	_zoom_level = clamp(value, min_zoom, max_zoom)
-	print("zooming to ", _zoom_level)
+	#print("zooming to ", _zoom_level)
 	# Then, we ask the tween node to animate the camera's `zoom` property from its current value
 	# to the target zoom level.
 	#tween.interpolate_property(

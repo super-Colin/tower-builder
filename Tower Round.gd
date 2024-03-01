@@ -1,5 +1,5 @@
 extends Node2D
-var widthInBricksPerLayer = 2
+var widthInBricksPerLayer = 1
 var heightInBricksPerTower = 2
 
 var currentTowerWidthInBricks = 0
@@ -14,16 +14,14 @@ var currentTowerAngle = 0
 @onready var brickPixelWidth = $StoneBrick.texture.get_width()
 @onready var brickPixelHeight = $StoneBrick.texture.get_height()
 @onready var brickStartingScale = $StoneBrick.scale
+@onready var brickStartingAngle = rad_to_deg($StoneBrick.rotation)
 @onready var currentScale = brickStartingScale
 
 
 func _ready():
 	Events.addBrick.connect(addBrick)
+	$Area2D/CollisionShape2D.shape.radius = radius
 
-
-
-func _process(delta):
-	pass
 
 
 
@@ -31,14 +29,16 @@ func addBrick():
 	var newBrick = $StoneBrick.duplicate()
 	var brickAngle = getLayerAngle()
 	var layerCenterPoint = getCenterOfLayerOnCircle()
-	var layerPixelWidth = widthInBricksPerLayer * brickPixelWidth
-	var positionInLayer = currentTowerWidthInBricks / widthInBricksPerLayer
-	print("positionInLayer offset ", positionInLayer , " ", currentTowerWidthInBricks , " ", widthInBricksPerLayer)
-	newBrick.visible = true
-	#newBrick.position.x  = layerCenterPoint.x - (layerPixelWidth/2) + (brickPixelWidth * positionInLayer * currentScale.x)
-	newBrick.position.x  = layerCenterPoint.x + (brickPixelWidth * currentTowerWidthInBricks * currentScale.x)
+	var layerPixelWidth = float(widthInBricksPerLayer * brickPixelWidth * currentScale.x)
+	var positionInLayer = float(currentTowerWidthInBricks) / float(widthInBricksPerLayer)
+	print("positionInLayer offset ", positionInLayer , " ", currentTowerWidthInBricks , " ", widthInBricksPerLayer, " ", (layerPixelWidth * positionInLayer) )
+	print(brickAngle)
+	newBrick.position.x  = layerCenterPoint.x + (layerPixelWidth * positionInLayer) 
 	newBrick.position.y = layerCenterPoint.y + (currentTowerLayerHeight * brickPixelHeight * currentScale.y) * -1
-	#newBrick.position.y =  -100
+	newBrick.rotation = deg_to_rad(brickAngle + brickStartingAngle)
+	print("rotation set at ", newBrick.rotation)
+
+	newBrick.visible = true
 	$'.'.add_child(newBrick)
 	currentTowerWidthInBricks += 1
 	# if the layer is finished currentScale.x
@@ -48,17 +48,17 @@ func addBrick():
 		currentTowerLayerHeight += 1
 		Events.addTowerHeight.emit(1)
 		if currentTowerLayerHeight == heightInBricksPerTower:
-			print("increasing current tower")
+			#print("increasing current tower")
 			currentTowerLayerHeight = 0
 			currentTower += 1
 
 
 
 func getLayerAngle():
-	if currentTower == 0:
-		return 0
-	#print("angle is: ", currentTower * 20)
-	return currentTower * 20
+	var angle = (currentTower * 30) % 360
+	print("angle is: ", angle)
+	#return ((currentTower * 20) + 90) % 360
+	return angle
 
 
 func getCenterOfLayerOnCircle():
@@ -68,11 +68,11 @@ func getCenterOfLayerOnCircle():
 		#centerOfLayerOnCircle.y = -sin(radius)
 		#currentTowerAngle = centerOfLayerOnCircle
 	var angle = getLayerAngle()
-	centerOfLayerOnCircle.x = cos(angle) * radius
-	centerOfLayerOnCircle.y = -sin(angle) * radius
-	print("getCenterOfLayerOnCircle: ", centerOfLayerOnCircle) 
-	return centerOfLayerOnCircle 
-		
+	centerOfLayerOnCircle.x = cos(deg_to_rad(angle)) * radius
+	centerOfLayerOnCircle.y = sin(deg_to_rad(angle)) * radius
+	print("getCenterOfLayerOnCircle: ", centerOfLayerOnCircle)
+	return centerOfLayerOnCircle
+
 
 
 func getBrickPosition():
