@@ -94,10 +94,10 @@ func _set_zoom_level(value: float):
 
 func _unhandled_input(event):
 	if event.is_action_pressed("scroll_down"):
-		print("zooming in")
+		#print("zooming in")
 		_set_zoom_level(_zoom_level - zoom_factor)
 	if event.is_action_pressed("scroll_up"):
-		print("zooming out")
+		#print("zooming out")
 		_set_zoom_level(_zoom_level + zoom_factor)
 	#tween.tween_property($'.', "position", Vector2(0, 0), 1)
 
