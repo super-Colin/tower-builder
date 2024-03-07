@@ -1,6 +1,6 @@
 extends Node2D
-var widthInBricksPerLayer = 2
-var heightInBricksPerTower = 7
+var widthInBricksPerLayer = 7
+var heightInBricksPerTower = 3
 
 var currentTowerWidthInBricks = 0
 var currentTowerLayerHeight = 0
@@ -66,7 +66,7 @@ func findBrickPointInLayer(layerCenterPointVector):
 	# find the brick that will be in the middle
 	var midBrickPosition = ceil(widthInBricksPerLayer / 2.0)
 	var isCenterOfOddLayer = currentTowerWidthInBricks + 1 == midBrickPosition and widthInBricksPerLayer % 2 != 0
-	print("midBrickPosition is ",midBrickPosition)
+	#print("midBrickPosition is ",midBrickPosition)
 	# if it's the middle of an odd row then return the center position
 	if isCenterOfOddLayer:
 		print("center of odd layer")
@@ -77,18 +77,22 @@ func findBrickPointInLayer(layerCenterPointVector):
 	var brickWidthFromCenter = bricksFromCenter * brickPixelWidthScaled()
 	var offsetVector
 	# if less than the middle block
-	if currentTowerWidthInBricks +1 < midBrickPosition:
-		print("<- left side")
+	if currentTowerWidthInBricks +1 < midBrickPosition and widthInBricksPerLayer % 2 != 0:
+		print("<- left side of odd")
 		offsetVector = setVectorLength(layerCenterPointVector.orthogonal(), brickWidthFromCenter)
+	# if less than the middle block
+	if currentTowerWidthInBricks +1 < midBrickPosition and widthInBricksPerLayer % 2 == 0:
+		print("<- left side of even")
+		offsetVector = setVectorLength(layerCenterPointVector.orthogonal(), brickWidthFromCenter + (brickPixelWidthScaled()/2))
 	# if more than the middle block on an odd tower
 	if currentTowerWidthInBricks +1 > midBrickPosition and widthInBricksPerLayer % 2 != 0:
-		print("-> right side")
+		print("-> right side of odd")
 		offsetVector = setVectorLength(layerCenterPointVector.orthogonal() * -1, brickWidthFromCenter)
 	# If more than the middle (an even number) and the total width is even
 	if currentTowerWidthInBricks +1 > midBrickPosition and widthInBricksPerLayer % 2 == 0:
-		print("-> right side")
+		print("-> right side of even")
 		#offsetVector = offsetVector * -1
-		offsetVector = setVectorLength(layerCenterPointVector.orthogonal() * -1, brickPixelWidthScaled()/2)
+		offsetVector = setVectorLength(layerCenterPointVector.orthogonal() * -1, brickWidthFromCenter - (brickPixelWidthScaled()/2))
 	# If this is an even width tower
 	if currentTowerWidthInBricks +1 == midBrickPosition :
 		print("-- center of even")
