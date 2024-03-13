@@ -21,6 +21,9 @@ signal toggleCameraFollowTower
 signal earthEatenUpdated
 signal addEarthEaten(amount: float)
 
+signal setPlanetRadius(amount: int)
+
+
 
 func _ready():
 	# Emit the update signal after an add or remove signal  

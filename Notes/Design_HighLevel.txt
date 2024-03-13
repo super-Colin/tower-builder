@@ -1,0 +1,243 @@
+1 Day Expected
+2 Work Days
+  - Very worth the extra day
+0 Full Days
+  
+
+
+Gameplay:
+  You start by seeing watching the ground slowly being turned gray in a slowly expanding radius under you
+  Shortly after you'll have enough material to start adding bricks to your first tower
+  Once you've built a few layers on your first tower you'll be able to start a new tower that will use bigger bricks
+  The new tower will have bigger bricks which will let it reach higher with the same number of layers
+  Rinse and repeat for a few towers
+
+
+
+
+Theme / Context / Story:
+  You are the hive mind behind the gray goo
+    "So hungry... must eat"
+  After the first few towers, you see that you are just reaching the top of some blades of grass and how small you're starting
+  The hivemind grows smarter
+
+
+
+
+
+
+
+Mechanics:
+  Build a tower higher and higher
+  At a certain height you can start a new larger tower
+  When you've built a large enough tower you win (possibly restart with a bigger tower requirement [..Meta progression?])
+
+
+Dynamics:
+  You begin with the only means of progression being to click to collect resources
+  Building your tower higher allows you to gain resources at a faster rate
+  At some point you are able to spend gathered resource to begin auto-clicking
+  ?? New mechanics unlock with each new tower ??
+
+
+Aesthetics:
+  Submission (pastime)
+  Sensation (beautiful background scenary, sense of growth)
+  
+  Starting from smaller than a blade of grass each tower scales up and eventually end up bigger than a city
+  Clicking advances the goo's progression eating the planet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------
+---------------------------
+---------------------------
+https://www.gamedeveloper.com/design/how-to-write-a-game-design-document
+From Scratch:
+---------------------------
+Tower Builder
+
+
+player experience goals:
+  Relaxing / Mindless, 
+  Feeling of continous progress,
+  Feeling small from increasing scale 
+
+
+Project Goals:
+  Create a game that can be sold on Steam
+  Create a game that I am proud of
+  Create a game that I enjoy
+  Create a game that is pleasing to the eye (to me)
+  Prove to myself that I can make an MVP close to what I envision
+
+
+Game World:
+  Something in the distance of space has created a grey goo technology that has been sent across the universe
+  You are the "Hive mind" that influences the behavior of a network of connected nano-bots/goo-bots
+  The connections start on the planet that you've landed on until you can devour the planet and create a tower/satellite/radio tower to reach other goo-ed planets
+  The hive mind becomes smarter as it grows
+  The graphics are pixelated with brighter (happier) colors
+    ? Against a subtle, dark under tone that you are the villian
+
+
+Mechanics:
+  Clicking a lot on a main thing
+  Automating the clicking
+  Waiting for the automated clicking to build up enough resources to unlock the next mechanic
+  New mechanics add complexity and difficulty
+  Win Condition: When your tower has reached an arbitrary height
+  New Game+ : Move to another planet
+
+  More Depth:
+    The main thing that will be available to click from the start is (the planet below your goo-feet/)
+    The first upgrade that automates clicking is (the goo developing the conscious hive mind)
+    After some time digging into the planet you'll realize you can't make more goo faster than you can dig and build up material
+      - Maybe a small pile builds up? 
+      - A button appears to place a block
+      - This will start a new (the first) resource counter for the total material mass you have stored in all blocks = 1 at this point
+      - Before you know it, you're building a tower
+    More time.. You can now spend the unproccessed material to...
+    ??Tower Defense?? - At some point you begin being attacked?
+
+
+    
+    The first upgrade that speeds up clicking is using the stored to build more
+      - The upgrades will be placed into the prevously placed block (If they could click one that would be cool -- hovering over could show the price of it on the tower based on it's scale)
+    The first upgrade that speeds up clicking is (the goo learning to work together more)
+
+  
+  
+
+----
+----
+Ranting
+----
+World
+
+
+Resources:
+  Goo Bots:
+    - The amount of nano bots eating away at the planet
+    - 
+  Knowledge? / Evolution Points? (Meta progression unlock tree)
+    - for research?
+  Research? different unlock tree than Knowledge  
+    - for research?
+  Unproccessed / Raw material
+    - A uniform material byproduct from consuming the planet
+    - Stored in the tower bricks
+    - From eating the planet
+    - For creating upgrades
+  Electricity
+    - needed by the end for 
+    - The goo overheats itself to produce energy (Furnace?) 
+    - Solar panels
+  Radio Strength
+    - The distance that your radio towers can reach into space
+    - Increases research rate (probably scales with bricks)
+
+
+
+Buildings/Upgrades:
+  Factory
+    - Too accelerate the rate you can produce more goo
+    - Consumes power
+  Hive Mind Tuner/Enhancer | Thought Purifier/Distiller
+    - Generate knowledge points
+  Furnace/
+    - Make electrity / Produce energy
+  Power lines?
+    - Spread power to other towers/bricks/ further away bricks
+  Radio Station
+    - Generates / increases radio strength
+  Satellites? as another type of radio station
+  ??Tower Defense?? - Turrets?
+
+  
+
+Systems:
+  Resources:
+    - Used to create and maintain upgrades, listed above
+  Power:
+    Generators:
+      - Produce Power
+      - Can power buildings in directly touching bricks
+      - Continously reduces the total bots
+      - Can be turned off?
+    Power Lines:
+      - Can spread power to further away buildings
+    Consumers:
+      - Things that will put a burden on electrical out put (other buildings etc)
+  Bricks / Towers:
+    Bricks are a visual indication of how much material you have stored
+      - As Bricks are created they will be placed on top of each other to create a tower
+        - Using material will consume the blocks in your towers
+      - After a tower has reached a certain height you can start a new bigger tower
+        - Each new tower will increase in scale creating bigger towers with the same amount of bricks
+  Radio Signals:
+    - Used to survey the sky and to reach other planets / ?predict and collect resources from meteors? / ?Some kind of gift?
+    - Adds a continous research bonus
+    - Created and added to by radio stations
+    Planetary Radio:
+      - The final step in reaching to another planet
+
+
+
+
+
+
+
+
+Good Ending / Bad Ending? (is it an obvious choice?) 
+  - Good Ending: When you have consumed the enough of the planet to finish the planetary radio
+  - Bad Ending: When you have consumed the planet without building the planetary Radio Tower(Bad)
+  - Joke Ending: ????
+    - Shouldn't be too obvious that there is different endings... but a hint would be good
+
+
+  ------ If there is a sequel it can pick up from here being able to use a radio dish the size the planet... and expand to a radio dish the size of the solar system
+    ------ If there is a sequel to the sequel it can pick up from there being able to reach new galaxies (solar sails??)
+    - It would be super cool if the sequel could see how you ended the previous game through a save file flag
+    
+
+
+
+Do you need to become sentient before placing your first block?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

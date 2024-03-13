@@ -11,3 +11,8 @@ var brickCost_stone = 0 # Cost to add a brick to the tower
 
 
 
+
+# Tower Round
+var s
+
+

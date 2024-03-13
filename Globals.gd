@@ -14,3 +14,9 @@ var totalHeight = 0
 var currentDepth = 0
 
 var earthEaten = 0
+
+
+
+
+
+

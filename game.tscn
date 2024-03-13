@@ -41,4 +41,4 @@ visible = false
 [node name="Background" parent="." instance=ExtResource("3_spluf")]
 
 [node name="Tower Round" parent="." instance=ExtResource("8_lanr4")]
-position = Vector2(559, 327)
+position = Vector2(554, 314)
