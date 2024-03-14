@@ -4,6 +4,25 @@
 
 
 
+
+High Level:
+  - Player must balance building more bots quickly (factories) against the power cost (which can cost bots)
+  - It is possible to get a game over, although difficult. 
+    - The goo will try to survive through the game's built in mechanics, as a sort of "self preservation"
+
+
+
+
+
+
+First 1 Minute of Gameplay:
+  -? Choice of bonus? (Just hold down the mouse? ...???)
+    - Evolution path or just a "race"/origin type flat bonus?
+
+
+
+
+
 UI:
   Menu could be center of the planet you start on?
     - shows the progression of your save
@@ -15,6 +34,9 @@ UI:
 
 
 Gameplay:
+
+
+
 
 
 

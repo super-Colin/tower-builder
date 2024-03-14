@@ -1,7 +1,8 @@
 1 Day Expected
-2 Work Days
-  - Very worth the extra day
-0 Full Days
+Took:
+  2 Work Days
+    - Very worth the extra day
+  0 Full Days
   
 
 
@@ -79,11 +80,12 @@ player experience goals:
 
 
 Project Goals:
-  Create a game that can be sold on Steam
+  Create a polished game by the end of the year
   Create a game that I am proud of
+  Create a game that can be sold on Steam
   Create a game that I enjoy
   Create a game that is pleasing to the eye (to me)
-  Prove to myself that I can make an MVP close to what I envision
+  Prove to myself that I can make an MVP close to what I envision by knowing what is in scope
 
 
 Game World:
@@ -131,9 +133,13 @@ World
 
 
 Resources:
-  Goo Bots:
+  GooBots:
+    - These are the most basic "resource",
     - The amount of nano bots eating away at the planet
-    - 
+    - There is a constant creating and destroying bots
+        - (run out of battery?-throw into a furnace?)
+            - If throwing into a furnace, are the dead bots a resource?
+    - If these are depleted you probably lose
   Knowledge? / Evolution Points? (Meta progression unlock tree)
     - for research?
   Research? different unlock tree than Knowledge  
@@ -143,7 +149,7 @@ Resources:
     - Stored in the tower bricks
     - From eating the planet
     - For creating upgrades
-  Electricity
+  Electricity / Energ
     - needed by the end for 
     - The goo overheats itself to produce energy (Furnace?) 
     - Solar panels
@@ -154,7 +160,7 @@ Resources:
 
 
 Buildings/Upgrades:
-  Factory
+  Factory / Nest / 
     - Too accelerate the rate you can produce more goo
     - Consumes power
   Hive Mind Tuner/Enhancer | Thought Purifier/Distiller
@@ -171,16 +177,24 @@ Buildings/Upgrades:
   
 
 Systems:
+  Save / Load:
+    - Save and Load will be required for an idle game like this
+    - Probably should implement an autosave feature
+  GooBots:
+    - These will eat into the planet and produce material/bricks
+    - Bots that are eating are also creating new bots
+    - Bots die off after so long
+    - If they are unable to keep producing new GooBots faster than they die it will be a game over
   Resources:
     - Used to create and maintain upgrades, listed above
   Power:
     Generators:
       - Produce Power
       - Can power buildings in directly touching bricks
-      - Continously reduces the total bots
-      - Can be turned off?
+      - Adds to the continously reducing total bots
+      - Can be turned off? Will turn off automatically if needed to survive?
     Power Lines:
-      - Can spread power to further away buildings
+      - Can spread power to further away buildings (and towers?)
     Consumers:
       - Things that will put a burden on electrical out put (other buildings etc)
   Bricks / Towers:
@@ -189,15 +203,20 @@ Systems:
         - Using material will consume the blocks in your towers
       - After a tower has reached a certain height you can start a new bigger tower
         - Each new tower will increase in scale creating bigger towers with the same amount of bricks
+  Buildings / Upgrades:
+    - Uses GooBots to carve useful buildings into the stored unproccessed material bricks
+    - It costs goobos and takes time to make buildings
   Radio Signals:
     - Used to survey the sky and to reach other planets / ?predict and collect resources from meteors? / ?Some kind of gift?
     - Adds a continous research bonus
     - Created and added to by radio stations
     Planetary Radio:
-      - The final step in reaching to another planet
-
-
-
+      - The final step in reaching to another planet (the last largest tower you build *should* be this if you've planned well enough)
+  Unlock Trees:
+    - These will unlock new game mechanics and UI elements (based on a choice at the start?)
+  ?Different Starting Bot Types?:
+    - Some are more effecient making power, one lives longer, one digs faster?
+      --- Leads to a Stat system..
 
 
 
@@ -206,7 +225,7 @@ Systems:
 Good Ending / Bad Ending? (is it an obvious choice?) 
   - Good Ending: When you have consumed the enough of the planet to finish the planetary radio
   - Bad Ending: When you have consumed the planet without building the planetary Radio Tower(Bad)
-  - Joke Ending: ????
+  - Joke Ending: When you manage to die before making the final tower
     - Shouldn't be too obvious that there is different endings... but a hint would be good
 
 
@@ -236,6 +255,10 @@ Do you need to become sentient before placing your first block?
 
 
 
+
+
+
+Goobos?
 
 
 
