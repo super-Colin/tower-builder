@@ -1,9 +1,76 @@
 2 Day Expected
-0 Work Days
+1 Work Days
 0 Full Days
 
 
 
+https://www.gamedeveloper.com/design/a-practical-guide-to-game-writing
+
+
+I am Legion, for we are many
+
+
+
+Plot Outline:
+  Beginning - You are a Goobot, a single (or small collective of) self replicating nanobot [Grey Goo Event basically]
+    - Sent out in all directions in the universe from some unknown entity
+
+  As you grow you begin to gain consciousness as the "Hive mind" that influences the goo as a whole
+    - This is never stated out loud
+    - It is displayed by changing labels like Goobots to Children
+    - It could introduce a "Hunger" meter (maybe this is just a visualization of their growth vs. death rate?)
+    - All the resource names could taker on these more personal labels
+    - These changes should slowly fade in/out
+  The next jump in "intelligence" happens, or begins after some influence from space
+    [
+      Meteors begin to land on the planet more and more often 
+      A special meteor lands and is eaten by the Goo
+      - Could/Should be different looking
+    ][
+      It could be a probe from another unknown entity that is trying to communicate
+      This trigger may also come from hearing a signal through a radio tower
+       - It could be tied to building your first or second radio tower
+    ]
+  This new intelligence opens up new mechanics
+  Allows you to begin actively searching the stars with radio towers
+    - ?Opens up an unlock an unlock tree?
+    - ?Opens research points?
+  The gooMind Desires to know more about the universe (?home?)
+  At this point you must begin researching to dig deeper into the planet / progress somehow
+  The Other begins to actively fight your consumption of the planet
+    - their creation of material helps to feed your consumption of material
+  (You will have to have encountered The Other at this point)
+  At some point you hit enough research to begin launching satellites into orbit
+  Once you have enough self-sustatianing satellites The Other begins to eat the planet as well
+    - Maybe it starts trying to destroy your towers?
+    - It is still generating more goo from passive / environmental energy sources
+    - 
+  the end game begins
+  (You will have to have begun to overtake The Other at this point)
+
+
+
+
+
+  Ending - You build a huge radar dish to reach out to and hear from deep space
+    - Best Ending: If you are able to combine with the other entity?
+      - It may feel like a war, but it can be resolved without extinction of either
+        - If you can manage to balance your destruction with their creation you can live in harmony
+    - Good Ending: When you have consumed enough of the planet to finish the planetary radio
+    - Bad Ending: When you have consumed the planet without enough material to build the planetary Radio Tower
+    - Joke Ending: When you manage to die before making the final tower
+    - Shouldn't be too obvious that there are different endings... but a hint somewhere would be good (Get all endings achievo?)
+  
+
+
+
+
+Almost all of the narrative will be implied
+  - UI labels / look changing through the phases
+    - towards a more organic feel ?Or a robotic feel?
+  - The story begins with your UI changing
+  - It continues to be told through the research tree
+    - Things like "interstellar ear" and ""...
 
 
 
@@ -12,14 +79,13 @@
 
 
 
-
-
-
-
-
-
-
-
+The other entity is basically your opposite
+  - creation vs destruction
+  - You create energy by consuming matter, it creates matter from energy
+  - It may try to fight against you somehow 
+    - Try to prevent or slow your progress
+    - Making a regenerating border you have to be able to consume fast enough
+  It the ultimate ending will be if you can combine with the other
 
 
 

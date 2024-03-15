@@ -185,6 +185,7 @@ Systems:
     - Bots that are eating are also creating new bots
     - Bots die off after so long
     - If they are unable to keep producing new GooBots faster than they die it will be a game over
+    - ?They may need upgrades to eat deeper towards the core?
   Resources:
     - Used to create and maintain upgrades, listed above
   Power:

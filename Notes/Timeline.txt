@@ -9,13 +9,14 @@ Expected Time Line:
 Design / Preproduction
 ------------
   High Level Design: 1-2 Days
-  Gameplay Design: 2-3 Days
   Story Design: 2-3 Days
+  Gameplay Design: 2-3 Days
   ???Establish Scope And Make Cuts: 1-2 Days???
     - Deciding what compromises to make
   Revisions: 2-3 Days
     - Bringing ideas from the previous phases into consideration with the different systems
     - It's possible for big changes to happen here
+   ???Establish Scope And Make Cuts: 1-2 Days???
   Concept Art: 2-4 Days
 
 ------------
