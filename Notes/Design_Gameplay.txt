@@ -5,16 +5,8 @@
 
 
 
-High Level:
-  - Player must balance building more bots quickly (factories) against the power cost (which can cost bots)
-  - It is possible to get a game over, although difficult. 
-    - The goo will try to survive through the game's built in mechanics, as a sort of "self preservation"
 
-
-
-
-
-
+High Level Gameplay
 First 1 Minute of Gameplay:
   Main menu is a start and an options button 
     - Comet/flaming projectile flying through space, in the background under the buttons
@@ -45,6 +37,7 @@ First 1 Minute of Gameplay:
     - This will include powered versions of the previous low-tech buildings
   After building your first generator a new research node is available for radio observations
   Generators will consume your material production to produce power
+    - Solar panels will be the only "renewable" source of energy and will be very expensive
     - You can use power to increase your goo production and thus your material production in the end
   Now thigs are beginning to scale faster
     - Numbers are getting bigger, difference in height between towers is growing, camera is zooming out furthur
@@ -69,7 +62,44 @@ First 1 Minute of Gameplay:
     - 
   Then it begins creating it's own goo
     - Unike your goo it creates material
-      - Maybe it builds a mountain around itself 
+      - Maybe it encases itself in material to toughen it
+      - Maybe it builds a small mountain range around itself
+  The new goo begins to fight your progress
+    - It produces material at the edge of your consumption into the planet
+      - This slows down your progress into the planet
+      - It also provides an infinite supply of material
+  You must continue to increase your production to keep up and not be "encased"
+    - it will attempt to encase you in a wall that you cannot eat through
+  You must overtake the probe that was the source of the new goo
+    - You can eat it
+    - Or you can spare it somehow
+  This unlocks the planetary radio research node
+--- End of 7/8 hour mark
+  With the other goo no longer providing infinite material you continue into the planet
+  Now you must work toward the planetary radio before the planet is completely eaten
+    - Otherwise your active goobots will die out and not be able to create more
+  Once completed you must supply it with a HUGE amount of power for a certain amount of time
+  Completing the PRadio and sending the signal is best ending!
+    - Investing in solar panels early will help not eat the planet as fast
+    - The mind falls asleep, waiting to be re-awoken
+  Completing the PRadio is a win
+    - The goo may die, but the monument lives on!
+  Failing to complete the PRadio is still a win
+    - The worst ending
+    - The Hive mind is sated, but slowly fades away
+--- End of 8/10 hour mark
+--- End of game
+
+
+
+
+
+
+Maybe beating the game unlocks tower builder 1 in the menu?
+  - Some terrible looking game with a very short gameplay loop?
+
+
+
 
 
 
@@ -86,7 +116,6 @@ UI:
 
 
 
-Gameplay:
 
 
 
@@ -98,6 +127,8 @@ Gameplay:
 
 
 
+  - It is possible to get a game over, although difficult. 
+    - The goo will try to survive through the game's built in mechanics, as a sort of "self preservation"
 
 
 
