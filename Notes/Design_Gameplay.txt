@@ -16,9 +16,60 @@ High Level:
 
 
 First 1 Minute of Gameplay:
-  -? Choice of bonus? (Just hold down the mouse? ...???)
-    - Evolution path or just a "race"/origin type flat bonus?
-
+  Main menu is a start and an options button 
+    - Comet/flaming projectile flying through space, in the background under the buttons
+    - Starting a new game will make the menu buttons fade away as the comet crashes onto the planet surface
+  Game starts with you seeing a small speckle that begins to grow
+  After a few moments you can click on the planet around the speckle to make it expand more quickly
+  Once the speckle has grown slightly larger a resource display of some kind appears
+    - This could be a bar that will change to a number later,
+--- End of 1 minute mark
+  Eventualy a brick will appear
+    - a pile of material could slowly build up
+      - The pile could also be the brick being slowly built up
+  This will start a new counter
+    - It may also unlock a bar for progress toward the next brick
+  The bricks will slowly build up on automatically at this point
+  There will be introduced a button that can speed up the placement of bricks
+    - This may be an outline or transparent sprite of the next brick to be placed
+      - Probably take more than 1 click to create the brick
+--- End of 5/10 minute mark
+  After enough bricks have been piled up you will have finished your first tower
+  This will start a new tower that uses larger bricks and ends up higher
+  After 1-2 towers you can begin to turn bricks into low level useful buildings
+    - This is where you'll be able to start increasing your new bot output and brick creation speed
+--- End of 1 hour mark
+  When your production reaches a certain amount you can begin building research related buildings
+  Your first research point will unlock a research tree (certain things could be randomized?) 
+  The first major research will unlock the power system and related buildings
+    - This will include powered versions of the previous low-tech buildings
+  After building your first generator a new research node is available for radio observations
+  Generators will consume your material production to produce power
+    - You can use power to increase your goo production and thus your material production in the end
+  Now thigs are beginning to scale faster
+    - Numbers are getting bigger, difference in height between towers is growing, camera is zooming out furthur
+--- End of 3 hour mark
+  After building up enough radio/space observation you unlock a new research node (Space Science)
+    - You can begin to launch satellites
+      - Satellites help scale your research
+  Your first satellite triggers a probe from The Other that lands on the surface
+    - This should be visible and obvious
+    - Clicking on it to "understand" is required to progress
+      - May take multiple clicks
+      - Can also 
+    - If left for too long it will be slowly eaten 
+      - Without getting the bonus research points
+    - If you don't activate it with clicks another will land 
+  After learning from the probe you can begin atively sending signals into space
+    - sparks knowledge of deep space
+    - probably costs lots of power
+  Another probe lands, but it cannot be destroyed
+--- End of 5/6 hour mark
+  It extends it's own radio dish/tower
+    - 
+  Then it begins creating it's own goo
+    - Unike your goo it creates material
+      - Maybe it builds a mountain around itself 
 
 
 
@@ -27,6 +78,8 @@ UI:
   Menu could be center of the planet you start on?
     - shows the progression of your save
   - Don't want to break the scale so maybe it's just focused on the edge of your progress into the planet
+  Maybe build the UI counters into the bricks as buildings?
+  Visual feedback of progress while being clicked is very important
 
 
 
@@ -50,6 +103,13 @@ Gameplay:
 
 
 
+
+  Start menu is a comet/flaming projectile in the background
+    - The only things to click here are start and options
+    - If the computer has a save file on it the start menu will have the current goo in the background (basically on auto play)
+  Game starts: 
+  -? Choice of bonus? (Just hold down the mouse? ...???)
+    - Evolution path or just a "race"/origin type flat bonus?
 
 
 
