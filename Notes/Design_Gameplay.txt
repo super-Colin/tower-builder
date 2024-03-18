@@ -1,12 +1,13 @@
 2-3 Day Expected
 0 Work Days
-0 Full Days
+1 Full Days
 
 
 
 
 
-High Level Gameplay
+High Level Gameplay Overview
+
 First 1 Minute of Gameplay:
   Main menu is a start and an options button 
     - Comet/flaming projectile flying through space, in the background under the buttons
@@ -14,7 +15,7 @@ First 1 Minute of Gameplay:
   Game starts with you seeing a small speckle that begins to grow
   After a few moments you can click on the planet around the speckle to make it expand more quickly
   Once the speckle has grown slightly larger a resource display of some kind appears
-    - This could be a bar that will change to a number later,
+    - This could be a bar that will change to a number later
 --- End of 1 minute mark
   Eventualy a brick will appear
     - a pile of material could slowly build up
@@ -30,8 +31,10 @@ First 1 Minute of Gameplay:
   This will start a new tower that uses larger bricks and ends up higher
   After 1-2 towers you can begin to turn bricks into low level useful buildings
     - This is where you'll be able to start increasing your new bot output and brick creation speed
+=== End of Phase 1 - So small... : from the start until you carve your first building into a brick 
 --- End of 1 hour mark
   When your production reaches a certain amount you can begin building research related buildings
+=== End of Phase 2 Self aware : from your first building until you unlock your first research node
   Your first research point will unlock a research tree (certain things could be randomized?) 
   The first major research will unlock the power system and related buildings
     - This will include powered versions of the previous low-tech buildings
@@ -41,6 +44,7 @@ First 1 Minute of Gameplay:
     - You can use power to increase your goo production and thus your material production in the end
   Now thigs are beginning to scale faster
     - Numbers are getting bigger, difference in height between towers is growing, camera is zooming out furthur
+=== End of Phase 3 - Industry : from first research to constructing a radio dish
 --- End of 3 hour mark
   After building up enough radio/space observation you unlock a new research node (Space Science)
     - You can begin to launch satellites
@@ -53,6 +57,7 @@ First 1 Minute of Gameplay:
     - If left for too long it will be slowly eaten 
       - Without getting the bonus research points
     - If you don't activate it with clicks another will land 
+=== End of Phase 4 - The Other : from first buildings until first satellite launch
   After learning from the probe you can begin atively sending signals into space
     - sparks knowledge of deep space
     - probably costs lots of power
@@ -60,6 +65,7 @@ First 1 Minute of Gameplay:
 --- End of 5/6 hour mark
   It extends it's own radio dish/tower
     - 
+=== End of Phase 5 - Aggression : from first probe landing to when it begins fighting your progress
   Then it begins creating it's own goo
     - Unike your goo it creates material
       - Maybe it encases itself in material to toughen it
@@ -69,16 +75,22 @@ First 1 Minute of Gameplay:
       - This slows down your progress into the planet
       - It also provides an infinite supply of material
   You must continue to increase your production to keep up and not be "encased"
-    - it will attempt to encase you in a wall that you cannot eat through
+    - it will attempt to encase you in a wall that you cannot eat through 
+      - causing a game over, ideally you can reload a recent auto save
   You must overtake the probe that was the source of the new goo
     - You can eat it
     - Or you can spare it somehow
+=== End of Phase 6 - Victory? : From the point of "aggression" to overtaking The Other's probe
   This unlocks the planetary radio research node
 --- End of 7/8 hour mark
   With the other goo no longer providing infinite material you continue into the planet
   Now you must work toward the planetary radio before the planet is completely eaten
     - Otherwise your active goobots will die out and not be able to create more
+=== End of Phase 7 - The Signal : Starts at the completion of the PRadio
   Once completed you must supply it with a HUGE amount of power for a certain amount of time
+  Completing the PRadio and sending the signal with completely passive energy is the best ending
+    - Investing in solar panels early will help not eat the planet as fast
+    - The mind falls asleep, waiting to be re-awoken
   Completing the PRadio and sending the signal is best ending!
     - Investing in solar panels early will help not eat the planet as fast
     - The mind falls asleep, waiting to be re-awoken
@@ -87,8 +99,37 @@ First 1 Minute of Gameplay:
   Failing to complete the PRadio is still a win
     - The worst ending
     - The Hive mind is sated, but slowly fades away
+=== End of Phase 8 - The End? : The planet is consumed and the Signal is either sent or not... but the planet is still/silent
 --- End of 8/10 hour mark
 --- End of game
+------ Roll credit...
+
+
+
+
+
+==============================
+==============================
+==============================
+
+Breaking that down into phases:
+
+Phase 1 - So small... : from the start until you carve your first building into a brick 
+Phase 2 - Self aware : from your first building until you unlock your first research node
+Phase 3 - Industry : from first research to constructing a radio dish
+Phase 4 - The Other : from first buildings until first satellite launch
+Phase 5 - Aggression : from first probe landing to when it begins fighting your progress
+Phase 6 - Victory? : From the point of "aggression" to overtaking The Other's probe
+Phase 7 - The Signal : Starts at the completion of the PRadio
+Phase 8 - The End? : The planet is consumed and the Signal is either sent or not... but the planet is still
+
+
+
+
+
+
+
+
 
 
 

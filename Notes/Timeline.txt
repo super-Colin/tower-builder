@@ -23,7 +23,7 @@ Design / Preproduction
 Rough Production
 ------------
   Programming:
-    Systems: 3-7 Days
+    Systems: 3-7 Days... each..
       - Resource Accumulation / Counting
       - Brick and Tower Tracking
       - Brick and Tower tiling patterned visual placement
